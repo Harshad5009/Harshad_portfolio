@@ -214,7 +214,7 @@ const ProjectsView = () => {
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 flex-1 flex flex-col relative overflow-y-auto`}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 flex-1 flex flex-col relative`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-widest uppercase">
           <FolderGit2 size={10} /> PROJECT_REPOSITORY_V2.0
       </div>
