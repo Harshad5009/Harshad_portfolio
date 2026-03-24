@@ -633,7 +633,7 @@ export default function App() {
           <div className="col-span-1 lg:col-span-3 flex flex-col h-full min-h-0">
 
             {/* Scrollable content area */}
-            <div className="flex-1 overflow-y-auto pr-1 lg:pr-2 pb-2 min-h-0">
+            <div className="flex-1 overflow-y-auto pr-1 lg:pr-2 pb-2 min-h-0 pt-6 fade-scroll">
               <AnimatePresence mode="wait">
                 {activeTab === 'HOME' && <motion.div key="home" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex flex-col gap-4"><HomeView greeting={greeting} deployLogs={deployLogs} visibleLogs={visibleLogs} /></motion.div>}
                 {activeTab === 'PROJECTS' && <motion.div key="projects" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex flex-col"><ProjectsView /></motion.div>}
