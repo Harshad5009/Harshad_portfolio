@@ -39,7 +39,7 @@ const borderColor = "border-[#00ffcc]/30"
 const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
   <>
     {/* Hero Intro Panel */}
-    <div className={`border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 relative flex-shrink-0 mt-2`}>
+    <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 relative flex-shrink-0 mt-2`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider">
           <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> harshad@developer:~$
       </div>
@@ -73,7 +73,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
     <div className="flex flex-col lg:flex-row gap-4 flex-shrink-0 lg:flex-1 min-h-[300px]">
         
         {/* Tech Stack Analysis */}
-        <div className={`border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-1 flex flex-col`}>
+        <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-1 flex flex-col`}>
           <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> TECH_STACK_ANALYSIS
           </div>
@@ -114,7 +114,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
         </div>
 
         {/* Code Workspace */}
-        <div className={`border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-[0.7] hidden lg:flex flex-col`}>
+        <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-[0.7] hidden lg:flex flex-col`}>
           <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> CODE_WORKSPACE.tsx
           </div>
@@ -148,7 +148,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
     </div>
 
     {/* Deploy Logs */}
-    <div className={`border ${borderColor} rounded bg-[#0a1218]/50 p-3 relative mt-2`}>
+    <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-3 relative mt-2`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider">
           <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> PROJECT_DEPLOY_LOGS
       </div>
@@ -214,7 +214,7 @@ const ProjectsView = () => {
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 flex-1 flex flex-col relative overflow-y-auto`}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 flex-1 flex flex-col relative overflow-y-auto`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-widest uppercase">
           <FolderGit2 size={10} /> PROJECT_REPOSITORY_V2.0
       </div>
@@ -280,7 +280,7 @@ const ProjectsView = () => {
 }
 
 const SkillsView = () => (
-   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative`}>
+   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
         <Cpu size={10} /> SYSTEM_DEPENDENCIES
       </div>
@@ -310,7 +310,7 @@ const SkillsView = () => (
 );
 
 const AboutView = () => (
-   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative`}>
+   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
         <User size={10} /> BACKGROUND_PROCESS
       </div>
@@ -369,7 +369,7 @@ const AboutView = () => (
 );
 
 const ContactView = () => (
-   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative justify-center items-center text-center`}>
+   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative justify-center items-center text-center`}>
       <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
         <Mail size={10} /> GET_IN_TOUCH
       </div>
@@ -554,7 +554,7 @@ export default function App() {
           <div className="col-span-1 lg:flex flex-col gap-4 hidden overflow-y-auto pr-1">
             
             {/* Developer Profile */}
-            <div className={`border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-shrink-0 mt-2`}>
+            <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-shrink-0 mt-2`}>
               <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc] animate-pulse"/> DEVELOPER PROFILE
               </div>
@@ -612,7 +612,7 @@ export default function App() {
             </div>
 
             {/* System Status */}
-            <div className={`border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-shrink-0 mt-auto`}>
+            <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-shrink-0 mt-auto`}>
               <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
                  <Activity size={10} /> SYSTEM_STATUS.v2.1
               </div>
@@ -644,7 +644,7 @@ export default function App() {
             </div>
 
             {/* Console Input — pinned outside scroll area, never overlaps */}
-            <div className={`border ${borderColor} rounded bg-[#0a1218]/80 p-3 flex items-center gap-3 relative flex-shrink-0 mt-2`}>
+            <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/80 p-3 flex items-center gap-3 relative flex-shrink-0 mt-2`}>
                 <div className="absolute left-0 top-0 w-1 h-full bg-[#00ffcc]"/>
                 <div className="text-[#00ffcc] text-xs font-bold flex items-center gap-2">
                   <Terminal size={14}/> harshad@portfolio:~$
