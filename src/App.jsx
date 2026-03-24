@@ -40,7 +40,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
   <>
     {/* Hero Intro Panel */}
     <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 relative flex-shrink-0 mt-2`}>
-      <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider">
+      <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
           <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> harshad@developer:~$
       </div>
       
@@ -74,7 +74,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
         
         {/* Tech Stack Analysis */}
         <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-1 flex flex-col`}>
-          <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
+          <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> TECH_STACK_ANALYSIS
           </div>
           <div className="absolute top-3 right-4 text-[13px] text-[#00ffcc] animate-pulse flex items-center gap-1">
@@ -115,7 +115,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
 
         {/* Code Workspace */}
         <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-[0.7] hidden lg:flex flex-col`}>
-          <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
+          <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
               <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> CODE_WORKSPACE.tsx
           </div>
           <div className="absolute top-3 right-4 text-[13px] text-gray-500 border border-gray-600 px-2 py-0.5 rounded bg-black">
@@ -149,7 +149,7 @@ const HomeView = ({ greeting, deployLogs, visibleLogs }) => (
 
     {/* Deploy Logs */}
     <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-3 relative mt-2`}>
-      <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider">
+      <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
           <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc]"/> PROJECT_DEPLOY_LOGS
       </div>
       <div className="mt-4 font-mono text-[11px] text-gray-400 space-y-1 pb-2">
@@ -215,7 +215,7 @@ const ProjectsView = () => {
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 lg:p-6 flex-1 flex flex-col relative`}>
-      <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-widest uppercase">
+      <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-widest uppercase">
           <FolderGit2 size={10} /> PROJECT_REPOSITORY_V2.0
       </div>
 
@@ -281,7 +281,7 @@ const ProjectsView = () => {
 
 const SkillsView = () => (
    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative`}>
-      <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
+      <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
         <Cpu size={10} /> SYSTEM_DEPENDENCIES
       </div>
       
@@ -311,7 +311,7 @@ const SkillsView = () => (
 
 const AboutView = () => (
    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative`}>
-      <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
+      <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
         <User size={10} /> BACKGROUND_PROCESS
       </div>
       
@@ -370,7 +370,7 @@ const AboutView = () => (
 
 const ContactView = () => (
    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-6 flex-1 flex flex-col relative justify-center items-center text-center`}>
-      <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
+      <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
         <Mail size={10} /> GET_IN_TOUCH
       </div>
       
@@ -555,7 +555,7 @@ export default function App() {
             
             {/* Developer Profile */}
             <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-shrink-0 mt-2`}>
-              <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider">
+              <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#00ffcc] animate-pulse"/> DEVELOPER PROFILE
               </div>
               
@@ -613,7 +613,7 @@ export default function App() {
 
             {/* System Status */}
             <div className={`mt-4 border ${borderColor} rounded bg-[#0a1218]/50 p-4 relative flex-shrink-0 mt-auto`}>
-              <div className="absolute -translate-y-1/2 top-0 left-4 bg-[#020508] px-2 z-20 text-[12px] text-[#00ffcc] flex items-center gap-2">
+              <div className="w-full border-b border-[#00ffcc]/30 pb-3 mb-4 text-[12px] text-[#00ffcc] flex items-center gap-2 font-bold tracking-wider uppercase">
                  <Activity size={10} /> SYSTEM_STATUS.v2.1
               </div>
               <div className="mt-2 text-[13px] font-mono grid grid-cols-1 gap-2">
@@ -633,7 +633,7 @@ export default function App() {
           <div className="col-span-1 lg:col-span-3 flex flex-col h-full min-h-0">
 
             {/* Scrollable content area */}
-            <div className="flex-1 overflow-y-auto pr-1 lg:pr-2 pb-2 min-h-0 pt-6 fade-scroll">
+            <div className="flex-1 overflow-y-auto pr-1 lg:pr-2 pb-2 min-h-0">
               <AnimatePresence mode="wait">
                 {activeTab === 'HOME' && <motion.div key="home" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex flex-col gap-4"><HomeView greeting={greeting} deployLogs={deployLogs} visibleLogs={visibleLogs} /></motion.div>}
                 {activeTab === 'PROJECTS' && <motion.div key="projects" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="flex flex-col"><ProjectsView /></motion.div>}
