@@ -629,7 +629,7 @@ export default function App() {
 
           </div>
 
-          {/* Right Main Content (Dynamic Views) */}
+          {/* Right Main Content (Dynamic Views - 2D Flat Mode Native) */}
           <div className="col-span-1 lg:col-span-3 flex flex-col h-full min-h-0">
 
             {/* Scrollable content area */}
